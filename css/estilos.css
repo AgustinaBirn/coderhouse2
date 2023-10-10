@@ -1,0 +1,752 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+                                  /*BODY HEADER*/
+body{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+body header{
+    grid-area: header;
+    height: 80px;
+    background-color:  #F97B22;
+    display: flex ; 
+    flex-wrap: wrap;  
+    flex-direction: column;
+}
+nav{
+    grid-area: nav;
+    background-color:#F97B22;
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-areas:
+    "area-uno area-dos";
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr 1fr;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+.area-uno{
+height: 80px;
+grid-area: area-uno;
+justify-content: space-between;
+display: grid;
+grid-template-areas:
+    "logo buscador";
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr fr;
+    justify-content:space-around;
+    align-items: center;
+    align-content: center;
+}
+.logo{
+    width: 160px;
+    height: 80px;
+    margin: 10px;
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+}
+
+.form-buscador{
+    grid-area: buscador;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 240px;
+}
+.form-buscador-b{
+    width: 240px;   
+}
+.area-dos{
+    height: 80px;
+    grid-area: area-dos;
+    display: flex;
+    justify-content: center;
+    justify-items: end;
+    align-items: center;
+    align-content: center;
+}
+.area-dos ul{
+    height: 100%;
+    width: 530px;
+    display: flex;
+    align-items: center;  
+}
+.nav-items{
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+    align-items: center;
+}
+nav .area-dos ul li a{
+    height: 100%;
+    color: aliceblue;
+    text-decoration: none;
+}
+nav .area-dos ul li a:hover{
+    color: #80461d;
+    text-decoration: underline;
+}
+ul{
+    list-style: none;
+}
+                                      /*BODY MAIN*/
+body main{
+    grid-area: main;
+    background-color: beige;
+    height: 100%;
+    width: 100%; 
+}
+
+                                    /*BODY FOOTER*/
+footer{
+    height: 35px;
+    grid-area: footer;
+    background-color: #7C9070;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-size: 10px;
+}
+                                    /*PAGINA INICIO/INDEX*/
+.index{
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-areas:
+    "index-imagen index-imagen-texto";
+    grid-template-rows: 1fr ;
+    grid-template-columns: fr 1fr;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;  
+    background-color: rgba(238, 248, 238, 0.637);
+}
+.index-imagen{
+    grid-area: index-imagen;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+.index-imagen-texto{
+    grid-area: index-imagen-texto;
+    width: 500px;
+    height: 200px;
+    background-color: rgba(254, 232, 176, 0.30);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-style: solid;
+    border-color: rgba(128, 70, 29, 0.32);
+    border-radius: 10px;
+}
+section .titulo-v-destacados{
+    display: flex;
+    justify-content: center;
+}
+.index-imagen-texto-titulo{
+    text-align: center;
+    align-items: center;
+}
+.index-imagen-texto-parrafo{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: justify ;
+    
+}
+.index-imagen-texto-parrafo p{
+    justify-content: center;
+    text-align: center; 
+}
+.viajes-destacados{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+}
+.boton-uno{
+    width:100px;
+    height:100px;
+    background-color:#9CA777;
+    margin: 5px;
+    padding:10px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    font-size:11px;
+    line-height:32px;
+    text-transform: uppercase;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+                         /* PAGINA PROXIMOS VIAJES*/
+.main__article-pv{
+    height: 2000px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__article-pv__titulo{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    margin-top: 30px;
+}
+.main__article-pv__titulo h1{
+    height: 40px;
+    color: #7C9070;
+}
+.main__article-pv__itinerarios{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "everest"
+    "kilimanjaro"
+    "aconcagua"
+    "machu-pichu";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    
+    margin-block-end: 30px;
+    
+}
+.main__article-pv__itinerarios__everest{
+grid-area: everest;
+height: 400px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.main__article-pv__itinerarios__kilimanjaro{
+grid-area: kilimanjaro;    
+height: 400px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.main__article-pv__itinerarios__aconcagua{
+grid-area: aconcagua;    
+height: 400px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.main__article-pv__itinerarios__machu-pichu{
+grid-area: machu-pichu;  
+height: 400px;
+width: 100%;  
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.estilo-itinerarios{
+   width: 100%;
+   height: 300px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+.estilo-itinerarios p{
+   text-align:justify ;
+}
+.boton-pv{
+    width:200px;
+    height:200px;
+    background-color:rgb(182, 156, 117);
+    margin: 5px;
+    padding:10px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    font-size:11px;
+    line-height:32px;
+    text-transform: uppercase;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+                               /*PAGINA GALERIA*/
+.galeria{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr  ;
+    grid-template-areas: 
+    "principal-gal"
+    "principal-fotos"
+    "principal-videos";
+}
+.principal-gal{
+    grid-area: principal-gal;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo-gal h1{
+    height: 40px;
+    width: 60px;
+    font-size: 20px;
+    color: rgba(23, 37, 117, 0.3);
+    justify-content: center;
+    align-items: center;
+}
+.principal-fotos{
+    width: 100%;
+    height: 400px;
+    grid-area: principal-fotos;
+}
+.contenido-fotos{
+    height: 400px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.titulo-fotos{
+    height: 30px;
+    
+}
+.titulo-fotos h2{
+    font-size: 20px;
+    color: #8a540f;
+}
+
+
+.principal-videos{
+    height: 350px;
+    width: 100%;
+    grid-area: principal-videos;
+}
+.contenido-videos{
+    height: 350px;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.titulo-videos{
+    height: 30px;
+    
+    
+}
+.titulo-videos h2{
+    font-size: 20px;
+    color: #8a540f;
+}
+
+.videos{
+    grid-area: fotos;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}   
+
+.videos .video-uno{
+    height: 210px;
+    width: 250px;
+}
+.videos .video-uno iframe{
+    height: 210px;
+    width: 250px;
+}
+
+.videos .video-dos{
+    height: 210px;
+    width: 250px;
+}
+.videos .video-dos iframe{
+    height: 210px;
+    width: 250px;
+}
+
+.videos .video-tres{
+    height: 210px;
+    width: 250px;
+}
+.videos .video-tres iframe{
+    height: 210px;
+    width: 250px;
+}
+                        /*PAGINA SOBRE MI*/
+.main__article-sb{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "presentacion"
+    "entrevistas";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.section-sob-uno{
+    height: 400px;
+    width: 100%;
+    grid-area: presentacion;
+    display: grid;
+    grid-template-areas: 
+    "video texto-presentacion";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.contenido-sob{
+    height: 100%;
+    width: 100%;
+    grid-area: texto-presentacion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titulo-sob h1{
+    height: 40px;
+    width: 400px;
+    font-size: 20px;
+    color: rgba(23, 37, 117, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.parrafo-sob p{
+    height: 200x;
+    width: 400px;
+    font-size: 20px;
+    color: rgba(23, 33, 90, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.video-sob{
+    grid-area: video;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.video-sob iframe{
+    height: 250px;
+    width: 400px;
+}
+.section-sob-dos{
+    height: 300px;
+    width: 100%;
+    grid-area: entrevistas;
+    display: grid;
+    grid-template-areas: 
+    "titulo-entrevistas"
+    "link-entrevistas";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(53, 79, 153, 0.1);
+    
+}
+
+.titulo-ent-sob{
+    height: 100px;
+    width: 100%;
+    grid-area: titulo-entrevistas;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-ent-sob h2{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.entrevistas{
+    height: 100%px;
+    width: 100%;
+    grid-area: link-entrevistas;
+    display: grid;
+    grid-template-areas: 
+    "ent-1 ent-2 ent-3 ent-4 ent-5";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.entrevistas__cadena3{
+    height: 100%;
+    width: 100%;
+    grid-area: ent-1;
+    justify-content: center;
+    align-items: center;
+}
+.entrevistas__canal-doce{
+    height: 100%;
+    width: 100%;
+    grid-area: ent-2;
+    justify-content: center;
+    align-items: center;
+}
+.entrevistas__la-voz{
+    height: 100%;
+    width: 100%;
+    grid-area: ent-3;
+    justify-content: center;
+    align-items: center;
+}
+.entrevistas__infobae{
+    height: 100%;
+    width: 100%;
+    grid-area: ent-4;
+    justify-content: center;
+    align-items: center;
+}
+.entrevistas__showsport{
+    height: 100%;
+    width: 100%;
+    grid-area: ent-5;
+    justify-content: center;
+    align-items: center;
+}
+.boton-ent-sob{
+    width:100px;
+    height:100px;
+    background-color:rgb(182, 156, 117);
+    margin: 5px;
+    padding:10px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 100px;
+    font-size:11px;
+    line-height:32px;
+    text-transform: uppercase;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenido-ent-sob{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contenido-ent-sob .texto-entrevista{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+                            /*PAGINA CONTACTO*/
+.section-contacto{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "titulo-contacto"
+    "medios-contacto";
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+.principal-contacto{
+    height: 500px;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(138, 84, 15, 0.1);
+}
+.titulo-contacto{
+    height: 100px;
+    width: 100%;
+    grid-area: titulo-contacto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(224, 170, 119, 0.3);
+}
+.titulo-contacto h1{
+    height: 50px;
+    width: 150px;
+}
+.medios-contacto{
+    height: 550px;
+    width: 100%;
+    grid-area: medios-contacto;
+    display: grid;
+    grid-template-areas: 
+    "contacto-personal contacto-redes";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(138, 84, 15, 0.1);
+}
+.titulo-personal{
+    height: 70px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(224, 170, 119, 0.3);
+}
+.titulo-personal h2{
+    font-size: 15px;
+    height: 70px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(224, 170, 119, 0.3);
+}
+
+
+.link-cont-personal{
+    height: 400px;
+    width: 100%;
+    grid-area: contacto-personal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(32, 38, 121, 0.1);
+}
+.link-cont-pers-b{
+    height: 180px;
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.link-redes-sociales{
+    height: 400px;
+    width: 100%;
+    grid-area: contacto-redes;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(32, 38, 121, 0.1)
+}
+.link-redes-sociales ul{
+    height: 300px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.link-cont-rrss{
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo-rrss{
+    height: 70px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(224, 170, 119, 0.3);
+}
+.titulo-rrss h2{
+    font-size: 15px;
+    height: 70px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(224, 170, 119, 0.3);
+}
